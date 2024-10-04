@@ -3,20 +3,12 @@ import { Message } from "./message";
 async function getCurrentUser() {
   return { id: 1, name: "Obi-Wan Kenobi" };
 }
-
+const BASE_API_URL = "http://localhost:4000";
 async function getMessages() {
-  return [
-    {
-      id: 1,
-      author: { id: 1, name: "Obi-Wan Kenobi" },
-      message: "It's over Anakin, I have the high ground.",
-    },
-    {
-      id: 2,
-      author: { id: 2, name: "Anakin Skywalker" },
-      message: "You underestimate my power!",
-    },
-  ];
+	const data = await fetch(`${BASE_API_URL}/messages`);
+	const users = await data.json();
+	console.log(users);
+	return users;
 }
 
 export async function Chat() {
