@@ -46,7 +46,12 @@ Next Sunday at 00:00 UTC time, Gareth already has all daily and weekly tokens, s
 - Tech stack: Next.js, Drizzle, Postgres, Zod, ESLint, TypeScript.
 - A readme explaining your big-picture plan, challenges you encountered, choices made, and highlights in your solution.
 - GitHub planning board.
+
+
 - You should have big picture goals as your sprint goals; and at a minimum of 4 sprint goals should be done so it's simple to understand how you divided your work into large chunks.
+
+
+
 - Good UI design, including good choice of font, color, layout, and component design.
 - Responsive design that works well on both mobile and on laptop.
 - Semantic HTML.
