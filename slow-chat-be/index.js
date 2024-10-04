@@ -2,8 +2,19 @@ const express = require("express");
 const app = express();
 const port = 4000;
 
-app.get("/", (req, res) => {
-	res.send("Hello World!");
+app.get("/messages", (req, res) => {
+	res.send( [
+        {
+          id: 1,
+          author: { id: 1, name: "Obi-Wan Kenobi" },
+          message: "It's over Anakin, I have the high ground.",
+        },
+        {
+          id: 2,
+          author: { id: 2, name: "Anakin Skywalker" },
+          message: "You underestimate my power!",
+        },
+      ]);
 });
 
 app.listen(port, () => {
